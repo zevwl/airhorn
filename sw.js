@@ -1,4 +1,4 @@
-const version = '0.6.11'
+const version = '0.6.13'
 const cacheName = `airhorner-${version}`
 
 self.addEventListener('install', event => {
@@ -11,9 +11,6 @@ self.addEventListener('install', event => {
         '/?homescreen=1',
         '/styles/main.css',
         '/scripts/main.min.js',
-        '/scripts/comlink.global.js',
-        '/scripts/messagechannerladapter.global.js',
-        '/scripts/pwqcompat.min.js',
         '/sounds/airhorn.mp3'
       ])
         .then(() => self.skipWaiting())
